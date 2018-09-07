@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+             />
+
+        <SeekBar
+            android:id="@+id/seekbar2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:layout_marginLeft="140dp"
+            android:paddingTop="30dp"
+            android:layout_marginStart="140dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:layout_marginStart="280dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbar3"
+            android:paddingTop="60dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="CREATE ACCOUNT"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"/>
+            <EditText
+                android:hint="Name"
+                android:paddingLeft="15dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_short_text_white_24dp"
+                android:background="@drawable/edittextstyle"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:hint="Email"
+                android:paddingLeft="15dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_mail_outline_white_24dp"
+                android:background="@drawable/edittextstyle"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:hint="Password"
+                android:paddingLeft="15dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:background="@drawable/edittextstyle"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColorHint="@color/white"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center_horizontal"
+                android:text="continue"
+                android:textColor="@color/white"
+                android:background="@drawable/buttonstyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Terms and Conditions"
+                android:fontFamily="sans-serif"
+                android:textSize="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/greybrown"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
